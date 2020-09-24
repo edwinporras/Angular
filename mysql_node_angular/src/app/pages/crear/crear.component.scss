@@ -1,0 +1,30 @@
+.login-form{
+  padding: 4rem 1rem;
+  mat-card{
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+    height: auto;
+  }
+  button{
+    width: 100%;
+  }
+
+  mat-form-field{
+    margin: 5%;
+  }
+  #correo{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .separador{
+    margin-bottom: 2rem;
+  }
+  mat-card-content{
+    height: auto;
+  }
+  footer{
+    display: none;
+  }
+}

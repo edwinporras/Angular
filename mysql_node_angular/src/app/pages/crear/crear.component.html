@@ -1,0 +1,74 @@
+<div class="login-form">
+  <mat-card>
+      <mat-card-content>
+        <h1>Crear Usuario</h1>
+        <form [formGroup]="loginForm" (ngSubmit)="onReg()">
+          <mat-form-field class="full-width-input">
+            <input
+            type="text"
+            formControlName="username"
+            matInput
+            placeholder="Username o Nombre Min 6 caracteres"
+            required>
+          </mat-form-field>
+
+          <mat-form-field class="full-width-input separador">
+            <input
+            type="password"
+            formControlName="password"
+            matInput
+            placeholder="password"
+            required>
+          </mat-form-field>
+
+          <mat-form-field class="full-width-input separador">
+            <input
+            type="text"
+            formControlName="role"
+            matInput
+            placeholder="Admin"
+
+            value="admin"
+            required>
+          </mat-form-field>
+
+          <mat-form-field class="full-width-input separador">
+            <input
+            type="text"
+            formControlName="apellidos"
+            matInput
+            placeholder="Apellidos completos"
+            required>
+          </mat-form-field>
+
+          <mat-form-field class="full-width-input separador">
+            <input
+            type="number"
+            formControlName="telefono"
+            matInput
+            placeholder="Telefono Solo numeros"
+            required>
+          </mat-form-field>
+
+          <mat-form-field class="full-width-input separador">
+            <input
+            type="email"
+            formControlName="correo"
+            matInput
+            placeholder="Correo Electronico ejemplo: ejmemplo123@mail.com"
+            required>
+          </mat-form-field>
+
+          <mat-form-field id="correo" class="full-width-input separador">
+            <input
+            type="text"
+            formControlName="direccion"
+            matInput
+            placeholder="Direccion Numeros o caracteres"
+            required>
+          </mat-form-field>
+          <button type="submit" [routerLink]="'/login'" mat-raised-button color="primary" >Registrar</button>
+        </form>
+      </mat-card-content>
+  </mat-card>
+</div>
